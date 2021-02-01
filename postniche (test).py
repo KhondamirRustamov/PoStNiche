@@ -45,8 +45,8 @@ def info(): #!!!!!!!!!!!!!!!!!!!!!
     print("\n41. niche.overlap.mcarthurlevin(), 42. niche.overlap.mcarthurlevin_list()")
     print("43. niche.overlap.pianka(), 44. niche.overlap.pianka_list()")
     print("45. niche.overlap.percentage(), 46. niche.overlap.percentage_list()")
-    print("47. niche.overlap.morista(), 48. niche.overlap.morista_list()")
-    print("49. niche.overlap.morista_simple(), 50. niche.overlap.morista_simple_list()")
+    print("47. niche.overlap.morisita(), 48. niche.overlap.morisita_list()")
+    print("49. niche.overlap.morisita_simple(), 50. niche.overlap.morisita_simple_list()")
     print("51. niche.overlap.horn(), 52. niche.overlap.horn_list()")
     print("53. niche.overlap.hurlbert(), 54. niche.overlap.hurlbert_list()")
     print("55. niche.overlap.schoener(), 56. niche.overlap.schoener_list()")
@@ -1652,7 +1652,7 @@ class niche():
             print("Процентное перекрещивание экологических ниш равно: ", percentage)
             return
 
-        def morista(a=0):
+        def morisita(a=0):
             if a==0:
                 a=int(input("Введите количество экологических уровней"))
             else:
@@ -1682,7 +1682,7 @@ class niche():
             print("\nПерекрещивание экологической ниши по индексу Мористы равно:", Morista)
             return
 
-        def morista_list(list1, list2):
+        def morisita_list(list1, list2):
             List1=[]
             List2=[]
             for p, q in zip(list1, list2):
@@ -1702,7 +1702,7 @@ class niche():
             print("\nПерекрещивание экологической ниши по индексу Мористы равно:", Morista)
             return 
 
-        def morista_simple(a=0):
+        def morisita_simple(a=0):
             if a==0:
                 a=int(input("Введите количество экологических уровней"))
             else:
@@ -1724,7 +1724,7 @@ class niche():
             print("Перекрещивание экологической ниши по упрощенному индексу Мористы равно: \n", Morista)
             return 
 
-        def morista_simple_list(list1, list2):
+        def morisita_simple_list(list1, list2):
             List1=[]
             List2=[]
             for p, q in zip(list1, list2):
@@ -2089,18 +2089,18 @@ class info_niche():
             print("\nРезультат функции: 1. процентное перекрещивание экологических ниш")
             return
 
-        def morista():
+        def morisita():
             print("\n-----------------------------")
-            print("niche.overlap.morista(a)")
+            print("niche.overlap.morisita(a)")
             print("-----------------------------")
             print("\nгде a = общее количество экологических уровней видов")
             print("\nДанная функция определяет перекрещивание экологических ниш по индексу Мористы")
             print("\nРезультат функции: 1. перекрещивание экологических ниш по индексу Мористы")
             return
         
-        def morista_list():
+        def morisita_list():
             print("\n-----------------------------")
-            print("niche.overlap.morista_list(list1, list2)")
+            print("niche.overlap.morisita_list(list1, list2)")
             print("-----------------------------")
             print("\nгде list1 = список со значениями распределения первого вида в экологических уровнях (вводить через запятую, без пробела)")
             print("\nгде list2 = список со значениями распределения второго вида в экологических уровнях (вводить через запятую, без пробела)")
@@ -2108,18 +2108,18 @@ class info_niche():
             print("\nРезультат функции: 1. перекрещивание экологических ниш по индексу Мористы")
             return
 
-        def morista_simple():
+        def morisita_simple():
             print("\n-----------------------------")
-            print("niche.overlap.morista_simple(a)")
+            print("niche.overlap.morisita_simple(a)")
             print("-----------------------------")
             print("\nгде a = общее количество экологических уровней видов")
             print("\nДанная функция определяет перекрещивание экологических ниш по упрощенному индексу Мористы")
             print("\nРезультат функции: 1. перекрещивание экологических ниш по упрощенному индексу Мористы")
             return
 
-        def morista_simple_list():
+        def morisita_simple_list():
             print("\n-----------------------------")
-            print("niche.overlap.morista_simple_list(list1, list2)")
+            print("niche.overlap.morisita_simple_list(list1, list2)")
             print("-----------------------------")
             print("\nгде list1 = список со значениями распределения первого вида в экологических уровнях (вводить через запятую, без пробела)")
             print("\nгде list2 = список со значениями распределения второго вида в экологических уровнях (вводить через запятую, без пробела)")
